@@ -1,1 +1,20 @@
- 
+/* Ensure the body and containers take 100% full screen width */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Remove restrictive max-width constraints on top-level sections */
+header, main, section, footer {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Use fluid containers with responsive horizontal padding */
+.container-fluid {
+  width: 100%;
+  padding-left: 5vw;  /* Scales dynamically on high-resolution monitors */
+  padding-right: 5vw;
+} 
